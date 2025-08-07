@@ -32,3 +32,9 @@ npm run dev
 ## Notes
 - This MVP uses **FFmpeg.wasm** in the browser. For large videos, plan a server-side pipeline.
 - See `README.md` for roadmap and limitations.
+
+
+---
+
+### Note on ESLint versions
+Vercel + Next.js 14.x expect **eslint 8.x**. This repo pins `eslint@8.57.0` to avoid the `ERESOLVE` peer-deps error with `eslint-config-next@14.2.5`.
